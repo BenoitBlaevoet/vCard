@@ -1,0 +1,32 @@
+#content-wrapper{
+    width: 60%;
+    margin: 100px auto 0 auto;
+    background-color: coral;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    overflow: hidden;
+}
+#profil-picture{
+    position: relative;
+    left: -60px;
+    bottom: -55px;
+}
+#description::before{
+    
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    background-color: brown;
+    top: -10px;
+    right: -100px;
+    transform: skew(-10deg, 0deg);
+}
+article{
+    position: relative;
+    z-index: 1;
+    padding: 50px 25px;
+}
