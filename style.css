@@ -30,9 +30,8 @@ p{
     height: 600px;
     background-color: cornflowerblue;
     margin: 100px auto 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    display: flex;
+    flex-direction: row;
     position: relative;
 }
 #vCard::after{
@@ -53,8 +52,10 @@ p{
     padding-left: 50px;
     padding-right: 200px;
     padding-bottom: 25px;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
+    flex-grow: 1 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #contact-info{
     align-self: flex-end;
@@ -80,7 +81,8 @@ p{
     padding-left: 250px;
     padding-right: 50px;
     background-color: whitesmoke;
-    display: grid;
+    flex-grow: 3;
+    display: flex;
 }
 #right-wrapper{
     align-self: center;
